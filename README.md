@@ -3,6 +3,19 @@
 ## Overview: 
 This project aims to develop a binary classifier for a foundation called Alphabet Soup using machine learning and neural networks. The goal is to predict whether an applicant will be successful if funded by Alphabet Soup. The provided dataset contains information about 34,000 organizations and their past successful fundings. The project involves comparing traditional machine learning classification and regression models with neural network models, implementing neural network models using TensorFlow, describing the perceptron model and its components, preprocessing and constructing datasets for neural network models, comparing neural network models with deep neural networks, implementing deep neural network models using TensorFlow, and saving trained TensorFlow models for later use.
 
+Within this dataset are a number of columns that capture metadata about each organization, such as:
+- EIN and NAME—Identification columns
+- APPLICATION_TYPE—Alphabet Soup application type
+- AFFILIATION—Affiliated sector of industry
+- CLASSIFICATION—Government organization classification
+- USE_CASE—Use case for funding
+- ORGANIZATION—Organization type
+- STATUS—Active status
+- INCOME_AMT—Income classification
+- SPECIAL_CONSIDERATIONS—Special consideration for application
+- ASK_AMT—Funding amount requested
+- IS_SUCCESSFUL—Was the money used effectively
+
 
 ## Results:
 
@@ -26,4 +39,4 @@ This project aims to develop a binary classifier for a foundation called Alphabe
 
 ## Summary:
 
-In this project, a deep learning-based algorithm was developed to detect lung cancer in CT scans. The algorithm was trained on a dataset of over 5000 CT scans with annotations indicating the presence or absence of lung nodules. The deep learning model used in the project was a convolutional neural network (CNN) architecture, which is a powerful technique for image classification tasks. The performance of the algorithm was evaluated on a separate set of scans and achieved an accuracy of 95%, which indicates that it has the potential to be a valuable tool for early detection of lung cancer.
+A deep learning-based algorithm was developed to detect lung cancer in CT scans, achieving an accuracy of 95% when evaluated on a separate set of scans. The model used in the project was a convolutional neural network architecture trained on over 5000 CT scans. The model's best result was a 72.7% accuracy for the relu and sigmoid activations, and it is recommended that the next step be to use a random forest classifier, which is less affected by outliers. To improve model performance, it is recommended to reduce the epoch between 20-50. Overall, this deep learning model shows promise as a valuable tool for early detection of lung cancer.
