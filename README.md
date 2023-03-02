@@ -19,6 +19,11 @@ This project aims to develop a binary classifier for a foundation called Alphabe
 - The target model performance was set as an "mean absolute error" (MAE) of less than 40,000 USD. The model was able to achieve a MAE of around 31,000 USD which is within the target performance range.
 - To increase the model performance, several steps were taken such as tuning the hyperparameters, trying different activation functions, increasing the number of neurons in the hidden layers, and adding more layers to the neural network. Ultimately, the best model performance was achieved with the above configuration.
 
+![Image 1](https://github.com/Sergg99/Charity-Funding/blob/5877d7ef807cd6e8204ec658725b8460f3c21c77/Challenge%2020/Resources/Accuracy%20Original.png)
+
+![Image 2](https://github.com/Sergg99/Charity-Funding/blob/5877d7ef807cd6e8204ec658725b8460f3c21c77/Challenge%2020/Resources/Accuracy%20Optimization.png)
+
+
 ## Summary:
 
 In this project, a deep learning-based algorithm was developed to detect lung cancer in CT scans. The algorithm was trained on a dataset of over 5000 CT scans with annotations indicating the presence or absence of lung nodules. The deep learning model used in the project was a convolutional neural network (CNN) architecture, which is a powerful technique for image classification tasks. The performance of the algorithm was evaluated on a separate set of scans and achieved an accuracy of 95%, which indicates that it has the potential to be a valuable tool for early detection of lung cancer.
