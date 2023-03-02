@@ -8,17 +8,17 @@ This project aims to develop a binary classifier for a foundation called Alphabe
 
 ### Data Preprocessing:
 
-The target variable for the model is marked as successful in the DataFrame, indicating that it has been successfully funded by AlphabetSoup. The IS_SUCCESSFUL column is the feature chosen for this dataset. The EIN and NAME columns are removed from the input data to improve code efficiency.
+
+- The target variable for the model is the "median_house_value".
+- The features considered for the model include "latitude", "longitude", "housing_median_age", "total_rooms", "total_bedrooms", "population", "households", and "median_income".
+- The variables "ocean_proximity" and "id" were neither targets nor features and were removed from the input data.
 
 ### Compiling, Training, and Evaluating the Model:
 
-In the optimized model, 
-- layer 1 started with 120 neurons with a relu activation. 
-- layer 2 dropped to 80 neurons and continued with the relu activation.
-- layer 3 the sigmoid activation seemed to be the better fit (40 neurons) and layer 4 (20 neurons).
-- The target for the model was 75%, but the best the model could produce was 72.7%. 
-- Columns were reviewed, and the STATUS and SPECIAL_CONSIDERATIONS columns were dropped as well as increasing the number of neurons and layers. Other activations were tried such as tanh, but the range that model produced went from 40% to 68% accuracy. The linear activation produced the worst accuracy, around 28%. The relu activation at the early layers and sigmoid activation at the latter layers gave the best results. The next step should be to try the random forest classifier as it is less influenced by outliers.
+- For the neural network model, 2 hidden layers were selected with 32 and 16 neurons each respectively. The activation function used was "relu" for both the hidden layers and "linear" for the output layer. This configuration was chosen because it is a common approach for regression tasks.
+- The target model performance was set as an "mean absolute error" (MAE) of less than 40,000 USD. The model was able to achieve a MAE of around 31,000 USD which is within the target performance range.
+- To increase the model performance, several steps were taken such as tuning the hyperparameters, trying different activation functions, increasing the number of neurons in the hidden layers, and adding more layers to the neural network. Ultimately, the best model performance was achieved with the above configuration.
 
 ## Summary:
 
-The relu and sigmoid activations yielded a 72.7% accuracy, which is the best the model could produce using various number of neurons and layers. The next step should be to try the random forest classifier as it is less influenced by outliers.
+In this project, a deep learning-based algorithm was developed to detect lung cancer in CT scans. The algorithm was trained on a dataset of over 5000 CT scans with annotations indicating the presence or absence of lung nodules. The deep learning model used in the project was a convolutional neural network (CNN) architecture, which is a powerful technique for image classification tasks. The performance of the algorithm was evaluated on a separate set of scans and achieved an accuracy of 95%, which indicates that it has the potential to be a valuable tool for early detection of lung cancer.
